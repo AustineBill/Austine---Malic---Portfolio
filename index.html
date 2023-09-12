@@ -11,7 +11,7 @@
         <nav id = "desktop-nav">
             <div class = "logo"> Austine </div>
             <div>
-                <ul class ="raw-links">
+                <ul class ="nav-links">
                     <li><a href = "#about"> About </a></li>
                     <li><a href = "#experience"> Experience </a></li>
                     <li><a href = "#projects"> Projetcs </a></li>
@@ -20,6 +20,23 @@
             </div>
 
         </nav>
+        <nav id = "Hamburger-nav">
+            <div class = "logo"> Austine </div>
+            <div class = "hamburger-menu">
+                <div class = "hamburger-icon" onclick = "toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class = "menu-links">
+                        <li><a href = "#about"  onclick = "toggleMenu() "> About </a></li>
+                        <li><a href = "#experience" onclick = "toggleMenu() "> Experience </a></li>
+                        <li><a href = "#projects" onclick = "toggleMenu() " > Projetcs </a></li>
+                        <li><a href = "#contanct" onclick = "toggleMenu() "x`> Contacts </a></li>
+                </div>
+            </div>
+        </nav>
         <script src ="script.js"></script>
     </body>
 </html>
+
