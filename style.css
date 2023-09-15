@@ -35,6 +35,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  width: 100%;
+  background-color: gray;
 }
 
 .nav-links {
@@ -58,6 +60,8 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-weight: bold;
+
 }
 
 .logo:hover {
@@ -154,7 +158,9 @@ section {
 }
 .section-container {
   display: flex;
+  padding-top: 5%;
 }
+
 
 
 /* Profile Section */
@@ -196,6 +202,25 @@ section {
   margin-top: 1rem;
   gap: 1rem;
 }
+
+/*about*/
+
+#about{
+  margin: 5%;
+}
+
+.details-container{
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.text-container{
+  justify-content: center;
+  text-align:center ;
+  padding-left: 5%;
+  margin-top: 5%;
+}
+
+
 
 /*Icon*/
 .icon {
@@ -243,3 +268,4 @@ section {
 .btn-container {
   gap: 1rem;
 }
+
