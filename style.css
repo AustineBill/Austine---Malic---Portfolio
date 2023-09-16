@@ -170,6 +170,15 @@ section {
   gap: 5rem;
   height: 80vh;
 }
+
+.section_picture1{
+  display: flex;
+  width: auto;
+  height: auto;
+  object-fit: scale-down;
+  margin-top: 5%;
+ 
+}
 .section__pic-container {
   display: flex;
   height: 400px;
