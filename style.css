@@ -2,6 +2,8 @@
 /* Whole HTML Document */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -175,9 +177,18 @@ section {
   display: flex;
   height: 400px;
   width: 400px;
-  margin: auto 0;
-
+  margin: auto 0; 
 }
+
+.pro-pic{
+  border-radius: 50%;
+  height: 450px;
+  width: 450px;
+  border: 10px solid #555;
+  
+  
+}
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -199,13 +210,52 @@ section {
   text-align: center;
 }
 
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+.social-icon{
+  display:flex;
 }
+
+.social-icon{
+  width:80px;
+  height:80px;
+  text-align: center;
+  text-decoration: none;
+  color:#000;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.social-icon .fab{
+  font-size: 30px;
+  line-height: 80px;
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s;
+
+}
+
+.social-icon::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-45deg, #ed1c94, #ffec17);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.social-icon:hover::after{
+  top: 0px;
+}
+
+.social-icon:hover .fab{
+  color: #fff;
+}
+
 
 
 /*Icon*/
@@ -220,6 +270,7 @@ section {
   display: flex;
   justify-self: center;
   gap: 1rem;
+  margin: 0 auto;
 }
 .btn {
   font-weight: 600;
@@ -321,7 +372,7 @@ section {
   
 }
 .article-container {
-  display: flex;
+  display: grid;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
@@ -338,6 +389,8 @@ article {
 article .icon {
   position: relative;
 }
+
+
 /* Projects Section */
 #projects {
   position: relative;
@@ -346,8 +399,10 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-
+  
 }
+
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
@@ -411,5 +466,10 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
+
+
 
 
