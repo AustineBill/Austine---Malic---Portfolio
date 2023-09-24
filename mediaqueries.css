@@ -17,6 +17,7 @@
     display: flex;
   }
 
+
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -25,8 +26,22 @@
   #profile,
   .section-container {
     display: block;
+
   }
 
+  #profile,
+  .section-text {
+    display: block;
+  }
+
+  #about,
+  .section__text__p1 {
+    display: block;
+    padding-top: 10%;
+  }
+  .icon{
+    cursor: pointer;
+  }
   .arrow {
     display: none;
   }
@@ -39,7 +54,7 @@
   section {
     margin: 0 6%;
   }
-c
+
 
   .section__pic-container {
     width: 275px;
@@ -61,6 +76,15 @@ c
   #profile {
     height: 83vh;
     margin-bottom: 0;
+    text-align: center;
+  }
+
+ .pro-pic{
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    justify-content: center; 
+    text-align: center;
   }
 
   article {
@@ -106,9 +130,14 @@ c
     height: 46vw;
     justify-content: center;
   }
+  .section__text {
+    padding-top: 25%;
+    
+  }
+
 
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.25rem; 
   }
 
   .title {
@@ -119,3 +148,6 @@ c
     text-align: justify;
   }
 }
+  .icon-icon{
+    cursor: default;
+  }
