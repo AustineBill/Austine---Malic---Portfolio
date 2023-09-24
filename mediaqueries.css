@@ -17,7 +17,6 @@
     display: flex;
   }
 
-
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -26,12 +25,6 @@
   #profile,
   .section-container {
     display: block;
-
-  }
-
-  #profile,
-  .section-text {
-    display: block;
   }
 
   #about,
@@ -39,9 +32,7 @@
     display: block;
     padding-top: 10%;
   }
-  .icon{
-    cursor: pointer;
-  }
+
   .arrow {
     display: none;
   }
@@ -131,11 +122,9 @@
     justify-content: center;
   }
   .section__text {
-    padding-top: 25%;
+    padding-top: 15%;
     
   }
-
-
   .section__text__p2 {
     font-size: 1.25rem; 
   }

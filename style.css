@@ -10,7 +10,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  max-width: max-content;
+  /*overflow: hidden; /* Hide scrollbars */
 }
 
 html {
@@ -157,7 +157,7 @@ section {
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  
 }
 .section-container {
   display: flex;
@@ -184,15 +184,18 @@ section {
   border-radius: 50%;
   height: 450px;
   width: 450px;
-  border: 7px solid #555;
+  background: linear-gradient(#4a4e55, #474c81);
+  border: 10px solid transparent;
+  mix-blend-mode:difference;
+
  
 }
 .section__text {
   align-self: center;
   text-align: center;
-  padding-left: 10%;
+  padding-left: 5%;
   padding-top: 5%;
-  margin: auto 0; 
+
 }
 
 
@@ -229,7 +232,7 @@ section {
 .icon {
   cursor: pointer;
   height: 3rem;
-  justify-content: center;
+  
   
 }
 
@@ -303,6 +306,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  
 }
 .about-details-container {
   justify-content: center;
@@ -315,14 +319,17 @@ section {
 .about-pic {
   border-radius: 2rem;
 }
+
 .details-container {
-  padding: 1.5rem;
+  padding-inline: 5px;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  order: 1px solid;
+  box-shadow: 5px 10px #888888;
 }
 .section-container {
   gap: 4rem;
@@ -379,19 +386,16 @@ article .icon {
 
 /* Projects Section */
 #projects {
-  position: flex;
-  
-  
+  position: relative;
 }
 
 .projects-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: max-content;
-
-  
+  padding-bottom: 20px;
 }
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
@@ -411,12 +415,14 @@ article .icon {
 }
 
 .column-container {
-  display: flex;
+  display: grid;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: center;
+  justify-content: space-around;
+  padding-top: 10px;
+
 }
 
 /* Contact Section */
@@ -425,7 +431,11 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  padding-top: 20%;
+  padding-bottom: 10%;
+  
 }
+
 
 .contact-info-upper-container {
   display: flex;
@@ -436,6 +446,7 @@ article .icon {
   background: rgb(250, 250, 250);
   margin: 2rem;
   padding: 0.5rem;
+  
 }
 
 .contact-info-container {

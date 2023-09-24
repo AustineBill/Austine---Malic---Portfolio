@@ -4,3 +4,9 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+
+const element3 = document.getElementById('pro-pic');
+
+function setBorder() { 
+    pro-pic.style.borderColor = 'orange tomato cadetblue'
+  }
