@@ -2,6 +2,18 @@
 /* Whole HTML Document */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+@keyframes typing {
+  from {
+    width: 0
+  }
+ 
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 
 * {
   margin: 0;
@@ -9,9 +21,16 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  
+ /* background-image: url(./assets/bg1.jpg);
   /*overflow: hidden; /* Hide scrollbars */
+  font-family: "Poppins", sans-serif;
+ /* background: hsl(204 100% 5%);
+  font-family: system-ui;
+  font-size: min(200%, 5vmin);*/
+
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -19,6 +38,7 @@ html {
 
 p {
   color: rgb(85, 85, 85);
+  font-family: "Dank Mono", ui-monospace, monospace;
 }
 
 /* Transition */
@@ -38,7 +58,7 @@ nav {
   align-items: center;
   height: 17vh;
   width: 100%;
-  background-color: gray;
+  background-color: rgb(184, 103, 15);
 }
 
 .nav-links {
@@ -184,9 +204,10 @@ section {
   border-radius: 50%;
   height: 450px;
   width: 450px;
-  background: linear-gradient(#4a4e55, #474c81);
+  
+ /* background: linear-gradient(#4a4e55, #474c81);
   border: 10px solid transparent;
-  mix-blend-mode:difference;
+  mix-blend-mode:difference;*/
 
  
 }
@@ -195,28 +216,48 @@ section {
   text-align: center;
   padding-left: 5%;
   padding-top: 5%;
-
+  
 }
 
 
 .section__text p {
   font-weight: 600;
-
+  
 
 }
 .section__text__p1 {
   text-align: center;
+  background-clip: text;
+  background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+  color: var(--color-background);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  letter-spacing: var(--letter-spacing);
+  padding: calc(--stroke-width / 2);
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: var(--stroke-width);
  
 }
 .section__text__p2 {
   display: block;
-  font-size: 1rem;
   margin-bottom: 1rem;
-}
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;;
+  
+  }
+  
+
 
 .title {
   font-size: 3rem;
   text-align: center;
+ 
+  
 }
 
 #socials-container {
@@ -330,6 +371,7 @@ section {
   text-align: center;
   order: 1px solid;
   box-shadow: 5px 10px #888888;
+  flex-wrap: wrap;
 }
 .section-container {
   gap: 4rem;
@@ -420,7 +462,7 @@ article .icon {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 10px;
 
 }
@@ -479,6 +521,16 @@ footer {
 footer p {
   text-align: center;
 }
+
+/*Text Animation*/
+
+
+
+
+
+
+
+
 
 
 
