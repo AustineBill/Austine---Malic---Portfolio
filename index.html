@@ -36,6 +36,7 @@
                 </div>
             </div>
         </nav>
+    
 
 
         <section id="profile">
@@ -44,8 +45,8 @@
             </div>
 
             <div class="section__text">
-                <p class="section__text__p1">Hello I am</p>
-                <h1 class="title">Austine Malic</h1>
+                <p class="section__text__p0">Hello I am</p>
+                <h1 class="name">Austine Malic</h1>
 
                 <p class="section__text__p2">Frontend Developer.</p>
                 <p class="section__text__p2">Junior Programmer.</p>
@@ -58,23 +59,36 @@
                     Contact Info
                   </button>
                 </div>
-                  <div id="socials-container">
                       <img src="./assets/github.png" alt="My Github" class="icon-icon" 
                         onclick=" location.href='https://github.com/AustineBill/BSIS-2AB-Malic'"/>
-                      <img src="./assets/indeedlogo.png" alt="My Indeed" class="icon-icon" 
+                      <img src="./assets/indeed.png" alt="My Indeed" class="icon-icon" 
                         onclick="location.href='https://profile.indeed.com/'"/>
                       <img src="./assets/upwork.png" alt="My Upwork" class="icon-icon" 
                     onclick="location.href='https://www.upwork.com/freelancers/~010bfb1aeee8277e2e'"/>
-                  
-                </div>
               </div>
         </section>
 
+        
         <section id="about">
           <div class="section__text">
             <p class="section__text__p1">Get to Know More</p>
             <h1 class="title">About Me</h1>
-      
+
+            <p class="animate-text"> 
+              <span> I am Creative</span>
+              <span> I am Curios </span>
+              <span> I am Better</span>
+              <span> I am Developer</span>
+              <span> I am Programmer</span>
+           </p>
+
+          </div>
+            
+          </section>
+
+        <section id="about-content">
+          <div class="section__text">
+          
             <div class="section-container">
               <div class="section__pic-container">
                 <img src="./assets/picture.jpg" alt="About Picture" class="about-pic"/>
@@ -85,8 +99,8 @@
                   <div class="details-container">
                     <img src="./assets/experienceicon.png" alt="Experience icon" class="icon"/>
                     <h3>Experience</h3>
-                    <p>2 Years <br />Frontend Developer</p>
-                    <p>5 Years <br />Junior Programmer</p>
+                    <p>2 Years - Frontend Developer</p>
+                    <p>5 Years - Junior Programmer</p>
                   </div>
 
                   <div class="details-container">
@@ -104,15 +118,19 @@
                       will teach you CSS from basic to advanced.
                     </p>
                   </div>
-                </div>
+
+               </div>
               </div>
             </div>
-              <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
             </section>
 
             <section id="experience">
-              <p class="section__text__p1">Explore My</p>
-              <h1 class="title">Experience</h1>
+              <div class="section__text">
+                <p class="section__text__p1">Explore My</p>
+                <h1 class="title">Experience  </h1>
+              </section>
+
+            <section id="experience-content">
               <div class="experience-details-container">
                 <div class="about-containers">
                   <div class="details-container">
@@ -173,14 +191,17 @@
                     </div>
                   </div>  
                       
-              <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/> 
+            
             </section>
 
-
             <section id="projects">
-              <p class="section__text__p1">Browse My</p>
-              <h1 class="title">Projects</h1>
-              
+              <div class="section__text">
+                <p class="section__text__p1">Browse My</p>
+                <h1 class="title">Projects</h1>
+              </section>
+
+
+            <section id="projects-content">
               <div class="projects-details-container">
                 <div class="about-containers">
                   
@@ -193,7 +214,7 @@
                     <div class="btn-container">
                       <button
                         class="btn btn-color-2"
-                        onclick="location.href='https://github.com/AustineBill'"> Github</button>
+                        onclick="location.href='https://github.com/users/AustineBill/projects/3'"> Github</button>
                      <button
                         class="btn btn-color-2"
                         onclick="location.href='http://tup.edu.ph'" onclick="location.href='http://www.tup.edu.ph'">Live Demo 
@@ -209,7 +230,7 @@
                     <h2 class="experience-sub-title project-title">BUS TICKETING SYSTEM</h2>
                     <div class="btn-container">
                       <button
-                        class="btn btn-color-2" onclick="location.href='https://github.com/AustineBill'"> Github
+                        class="btn btn-color-2" onclick="location.href='https://github.com/users/AustineBill/projects/6'"> Github
                       </button>
                       <button
                         class="btn btn-color-2"
@@ -221,12 +242,12 @@
                   <div class="details-container color-container">
                     <div class="column-container">
                       <img src="./assets/ATM Project.jpeg" alt="Project 3" class="project-img"/>
-                    </div><br>
-                    <h2 class="experience-sub-title project-title">ATM SIMULATION</h2>
+                    </div>
+                    <h2 class="experience-sub-title project-title">ATM <br> SIMULATION</h2>
                     <div class="btn-container">
                       <button
                         class="btn btn-color-2"
-                        onclick="location.href='https://github.com/AustineBill'"> Github</button>
+                        onclick="location.href='https://github.com/users/AustineBill/projects/4'"> Github</button>
                       <button
                         class="btn btn-color-2"
                         onclick="location.href='http://tup.edu.ph'"
@@ -234,39 +255,38 @@
                       </button>
                     </div>
                   </div>
-
-                  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/> 
-
                   
                   <div class="details-container color-container">
                     <div class="column-container">
                       <img src="./assets/Notepad -TextPad.png" alt="Project 4" class="project-img"/>
                     </div>
-                    <h2 class="experience-sub-title project-title">TEXTPAD</h2>
+                    <h2 class="experience-sub-title project-title">TEXTPAD APPLICATION</h2>
                     <div class="btn-container">
                       <button
                         class="btn btn-color-2"
-                        onclick="location.href='https://github.com/AustineBill'"> Github</button>
+                        onclick="location.href='https://github.com/users/AustineBill/projects/5'"> Github</button>
                       <button
                         class="btn btn-color-2"
                         onclick="location.href='http://tup.edu.ph'"
                         onclick="location.href='http://www.tup.edu.ph'"> Live Demo </button>
                     </div>
                    </div> 
+
+                   
+
                  </div>
                 </div>
-                  
-                
             </section>
-            
-            
 
             <section id="contact">
-         
-              <p class="section__text__p1">Get in Touch</p>
-              <h1 class="title">Contact Me</h1>
-           
+              <div class="section__text">
+                <p class="section__text__p1">Get in touch</p>
+                <h1 class="title">Contact Me</h1> 
+              </section>
+            
+            
 
+            <section id="contact-content">
               <div class="contact-info-upper-container">
                 <div class="contact-info-container">
                   <img
