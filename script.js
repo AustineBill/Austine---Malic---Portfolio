@@ -35,3 +35,4 @@ setTimeout(function(){
 
 window.onload=animateText;
 
+
