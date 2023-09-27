@@ -32,10 +32,7 @@
     display: block;
     padding-top: 10%;
   }
-
-  .arrow {
-    display: none;
-  }
+   
 
   section,
   .section-container {
@@ -55,6 +52,11 @@
 
   .about-containers {
     margin-top: 0%;
+  }
+
+  .Myskills{
+    width: 275px;
+    height: 400px;
   }
 }
 

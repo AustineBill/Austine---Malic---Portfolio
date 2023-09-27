@@ -5,6 +5,8 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
+  
+
 const txts=document.querySelector(".animate-text").children,
   txtsLen=txts.length;
 let index=0;

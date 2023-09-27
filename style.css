@@ -32,6 +32,16 @@
 	}
 }
 
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +58,7 @@ body {
   /*background:#111;*/
   /*background-image: linear-gradient(to right, #578277, #3a505c, #73496c, #504b2d);
   */
-  background-image: linear-gradient(to bottom, #193a6f, #2c599d, #5b84c4, #f98125);
+  background-image: linear-gradient(to bottom, #2d528e, #5b7dae, #d782d4, #f98125); /*#193a6f*/
   mix-blend-mode: transparent;
 
 }
@@ -420,7 +430,7 @@ section {
 .details-container:hover {
   text-align: center;
   /*background: #FFFDD0;*/
-  background: #e7f172;
+  background: #cefe9f;
 }
 
 .section-container {
@@ -443,8 +453,62 @@ section {
 /* Skills Section */
 #skills-content {
   position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20%;
 }
 
+.Myskills{
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: 14px;
+  background: #f7c30a;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
 
 /* Experience Section */
 #experience-content {
@@ -474,13 +538,13 @@ section {
 }
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  width: 20rem;
+  gap: 2rem;
 }
 article .icon {
   position: relative;
 }
+
 
 /* Projects Section */
 #projects-content {
@@ -533,6 +597,7 @@ article .icon {
   padding-top: 10px;
 }
 
+
 /* Contact Section */
 #contact-content {
   display: flex;
@@ -547,9 +612,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(163, 163, 163) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background:#fcfcfc;
+  border: rgb(94, 36, 36) 0.1rem solid;
+  background:transparent;
   margin: 2rem;
   padding: 0.5rem;
   padding-bottom: 2rem;  
@@ -606,7 +670,7 @@ footer a {
 }
 .animate-text span{
     font-size: 40px;
-    color:white;
+    color:PaleGoldenRod;;
     font-weight: 700;
     display: inline-block;
     line-height: 46px;
@@ -622,9 +686,6 @@ footer a {
 }
 
 
-
- 
-/*<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience-content'"/>
 
 
 
