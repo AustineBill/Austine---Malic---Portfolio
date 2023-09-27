@@ -432,10 +432,17 @@ section {
   width: 400px;
   margin: auto 0;
 }
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+
+.text-container {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+
+
+/* Skills Section */
+#skills-content {
+  position: relative;
 }
 
 
@@ -452,18 +459,17 @@ section {
 .experience-details-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  
+  flex-direction: column; 
 }
+
 .article-container {
   
   display: grid;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content:center;
   
 }
 article {
