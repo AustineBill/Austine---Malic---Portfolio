@@ -48,19 +48,9 @@
 }
 
 body {
-  
- /*background-image: url(./assets/bg1.jpg);
-  /*overflow: hidden; /* Hide scrollbars */
   font-family: "Poppins", sans-serif;
-  /*background: hsl(204 100% 5%);
-  font-family: system-ui;
-  font-size: min(100%, 5vmin);*/
-  /*background:#111;*/
-  /*background-image: linear-gradient(to right, #578277, #3a505c, #73496c, #504b2d);
-  */
-  background-image: linear-gradient(to bottom, #2d528e, #5b7dae, #d782d4, #f98125); /*#193a6f*/
+  background-image: linear-gradient(to bottom, #2d528e, #5b7dae, #d782d4, #f98125); 
   mix-blend-mode: transparent;
-
 }
 
 
@@ -91,7 +81,6 @@ nav {
   align-items: center;
   height: 17vh;
   width: 100%;
-  /*background-color: rgb(155, 104, 202);*/
 }
 
 .nav-links {
@@ -127,6 +116,8 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+
+
 
 /* Hamburger Menu */
 
@@ -246,6 +237,7 @@ section {
   width: 450px;
   border: 10px solid rgb(182, 171, 117);
 }
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -307,7 +299,6 @@ section {
   color: PaleGoldenRod;
   outline: none;
   text-align: center;
-  
 }
 
 .title:hover {
@@ -429,7 +420,6 @@ section {
 
 .details-container:hover {
   text-align: center;
-  /*background: #FFFDD0;*/
   background: #cefe9f;
 }
 
