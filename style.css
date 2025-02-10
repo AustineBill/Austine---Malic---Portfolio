@@ -445,8 +445,8 @@ a:hover {
 }
 
 .Myskills {
-  width: 100%;
-  max-width: 600px;
+  width: 200%;
+  max-width: 1000px;
   justify-content: center;
 }
 
@@ -475,11 +475,10 @@ a:hover {
 .skill-per::before {
   content: attr(per);
   position: absolute;
-  padding: 4px 6px;
+  padding: 4px 4px;
   background: #f1f1f1;
   border-radius: 4px;
   font-size: 12px;
-  top: -35px;
   right: 0;
   transform: translateX(50%);
 }
