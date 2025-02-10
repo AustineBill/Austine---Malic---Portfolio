@@ -42,13 +42,24 @@
   }
 }
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* Body and Background */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -78,6 +89,13 @@ a,
 }
 
 /* Desktop Nav */
+
+nav, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 nav,
 .nav-links {
   display: flex;
@@ -205,17 +223,12 @@ a:hover {
 
 /* Section */
 
-.section-container {
-  display: flex;
-  padding-top: 5%;
-}
-
 /* Profile Section */
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
   height: 80vh;
+  gap: 5rem;
 }
 
 .section__pic-container {
@@ -234,13 +247,6 @@ a:hover {
   border: 10px solid rgb(182, 171, 117);
 }
 
-.section__text {
-  align-self: center;
-  text-align: center;
-  padding-left: 5%;
-  padding-top: 5%;
-  place-items: center;
-}
 
 .section__text p {
   font-weight: 600;
@@ -367,7 +373,7 @@ a:hover {
 /* About Section */
 #about {
   position: relative;
-  padding: 2rem 1rem; /* Equal padding on left and right */
+  padding: 1rem; /* Equal padding on left and right */
 }
 
 .about-containers {
@@ -583,8 +589,18 @@ a:hover {
 
 .project-img {
   border-radius: 1rem;
-  width: 80%;
+  width: 100%;
   max-width: 400px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s, opacity 0.3s;
+  margin-bottom: 1rem;
+}
+
+.project-img-port {
+  border-radius: 1rem;
+  width: 80%;
+  max-width: 100px;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s, opacity 0.3s;
@@ -707,3 +723,12 @@ footer a {
 .animate-text span.text-out {
   animation: textOut 0.5s ease;
 }
+
+
+.container__text {
+  align-self: center;
+  text-align: center;
+  padding-top: 5%;
+  place-items: center;
+}
+
