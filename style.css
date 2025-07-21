@@ -42,24 +42,22 @@
   }
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100%;
 }
 
 /* Body and Background */
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
   overflow-x: hidden;
 }
-
 
 body {
   font-family: "Poppins", sans-serif;
@@ -90,7 +88,8 @@ a,
 
 /* Desktop Nav */
 
-nav, ul {
+nav,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -221,23 +220,53 @@ a:hover {
   transform: none;
 }
 
+.container {
+  background: #ffffff;
+  text-align: justify;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.see-through-container {
+  background: transparent;
+  text-align: justify;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: auto;
+  transition: all 0.3s ease;
+}
+
 /* Section */
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
 
 /* Profile Section */
 #profile {
   display: flex;
-  justify-content: center;
-  height: 80vh;
-  gap: 5rem;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
 }
 
 .section__pic-container {
   display: flex;
   height: 400px;
-  width: 400px;
+  width: 200px;
   margin: auto 0;
-  justify-content: center;
-  padding-bottom: 20px;
+  justify-content: right;
 }
 
 .pro-pic {
@@ -247,16 +276,12 @@ a:hover {
   border: 10px solid rgb(182, 171, 117);
 }
 
-
-.section__text p {
-  font-weight: 600;
-}
-
-.section__text__p0 {
+.section__text__p {
   padding-top: 40px;
   text-align: center;
   font-size: 20px;
   color: white;
+  font-weight: 600;
 }
 
 .section__text__p1 {
@@ -313,15 +338,10 @@ a:hover {
 .icon-icon {
   justify-content: center;
   cursor: pointer;
+  cursor: pointer;
   height: 50px;
   gap: 1rem;
   padding-left: 25px;
-  padding-right: 30px;
-}
-
-.icon-icon:hover {
-  cursor: default;
-  height: 2.5rem;
 }
 
 /* Buttons */
@@ -371,37 +391,13 @@ a:hover {
 }
 
 /* About Section */
-#about {
-  position: relative;
-  padding: 1rem; /* Equal padding on left and right */
-}
 
 .about-containers {
   display: flex;
   flex-wrap: wrap;
+  padding: 2rem 0;
   gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  justify-content: center; /* Centers the content */
-}
-
-.about-details-container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  color: black;
-  width: 100%;
-}
-
-.details-container {
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: 0.1rem solid rgb(163, 163, 163);
-  text-align: center;
-  box-shadow: 5px 10px #070707;
-  color: black;
-  padding: 2rem;
 }
 
 .section-container {
@@ -420,34 +416,36 @@ a:hover {
 }
 
 .about-pic {
-  border-radius: 2rem;
   width: 100%;
-  height: auto;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .text-container {
-  text-align: justify; /* Justifies text */
-  width: 100%;
+  background: #ffffff;
+  text-align: justify;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  transition: all 0.3s ease;
+  justify-content: center;
 }
 
-.text-container p {
-  margin: 0;
+.text {
+  text-align: justify;
   line-height: 1.6;
   color: #000000;
 }
 
 /* Skills Section */
-#skills {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20vh;
-}
 
 .Myskills {
-  width: 200%;
-  max-width: 1000px;
+  width: auto;
+  max-width: auto;
   justify-content: center;
+  padding: 5rem;
 }
 
 .skill-name {
@@ -496,10 +494,6 @@ a:hover {
 }
 
 /* Experience Section */
-#experience {
-  padding: 4rem 1rem;
-  text-align: center;
-}
 
 .experience-details-container {
   display: flex;
@@ -509,14 +503,15 @@ a:hover {
 }
 
 .details-container {
-  width: calc(
-    25% - 2rem
-  ); /* Ensure 4 containers per row (with gap between them) */
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  width: calc(25% - 2rem);
   text-align: left;
+  background: #ffffff;
+  text-align: justify;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: auto;
+  transition: all 0.3s ease;
 }
 
 .experience-sub-title {
@@ -570,7 +565,7 @@ a:hover {
   padding-bottom: 2rem;
 }
 
-.color-container {
+.small-container {
   background: rgb(250, 250, 250);
   border-radius: 1rem;
   padding: 4rem;
@@ -723,11 +718,9 @@ footer a {
   animation: textOut 0.5s ease;
 }
 
-
 .container__text {
   align-self: center;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 10%;
   place-items: center;
 }
-
