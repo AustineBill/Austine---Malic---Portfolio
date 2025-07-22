@@ -220,18 +220,10 @@ a:hover {
   transform: none;
 }
 
+/* Container */
+
 .container {
   background: #ffffff;
-  text-align: justify;
-  padding: 50px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: auto;
-  transition: all 0.3s ease;
-}
-
-.see-through-container {
-  background: transparent;
   text-align: justify;
   padding: 50px;
   border-radius: 20px;
@@ -243,11 +235,16 @@ a:hover {
 /* Section */
 
 section {
-  width: 100%;
-  height: 100vh;
   display: flex;
   padding: 2rem;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+#about-content {
   display: flex;
+  padding: 2rem;
   justify-content: center;
   height: auto;
   width: 100%;
@@ -330,18 +327,20 @@ section {
 
 /*Icon*/
 
-.icon {
-  cursor: pointer;
-  height: 3rem;
+.icon-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 
-.icon-icon {
-  justify-content: center;
+.icon-column i,
+.icon-column iconify-icon {
+  font-size: 40px; /* for Font Awesome */
+  width: 40px; /* for Iconify */
+  height: 40px; /* for Iconify */
+  color: #000000;
   cursor: pointer;
-  cursor: pointer;
-  height: 50px;
-  gap: 1rem;
-  padding-left: 25px;
 }
 
 /* Buttons */
@@ -395,7 +394,6 @@ section {
 .about-containers {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 0;
   gap: 2rem;
   justify-content: center;
 }
@@ -442,8 +440,6 @@ section {
 /* Skills Section */
 
 .Myskills {
-  width: auto;
-  max-width: auto;
   justify-content: center;
   padding: 5rem;
 }
@@ -495,23 +491,20 @@ section {
 
 /* Experience Section */
 
+#experience {
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+}
+
 .experience-details-container {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   gap: 2rem;
   justify-content: center; /* Center align the containers in the row */
-}
-
-.details-container {
-  width: calc(25% - 2rem);
-  text-align: left;
-  background: #ffffff;
-  text-align: justify;
-  padding: 50px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: auto;
-  transition: all 0.3s ease;
 }
 
 .experience-sub-title {
@@ -527,7 +520,7 @@ section {
 
 .article-container article {
   display: flex;
-  align-items: center;
+
   margin-bottom: 1rem;
 }
 
@@ -540,17 +533,6 @@ section {
   font-size: 1rem;
 }
 
-.details-container h3 {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.details-container p {
-  font-size: 1rem;
-  margin: 0;
-  color: #666; /* Slightly lighter color for the text */
-}
-
 /* Projects Section */
 #projects {
   position: relative;
@@ -561,7 +543,7 @@ section {
   display: flex;
   justify-content: space-between; /* Distributes space between the containers */
   flex-wrap: wrap; /* Allows wrapping if the containers don’t fit in a single row */
-  gap: 2rem; /* Spacing between containers */
+  gap: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -578,7 +560,9 @@ section {
   align-items: center;
   height: 350px;
   flex: 1; /* Ensures that items grow evenly */
-  max-width: 22%; /* Limits the width of each container */
+  max-width: auto; /* Limits the width of each container */
+  height: auto; /* Allows the height to adjust based on content */
+  margin: 2rem;
 }
 
 .project-img {
@@ -632,6 +616,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
 }
 /* Contact Section */
 

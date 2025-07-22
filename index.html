@@ -8,6 +8,8 @@
         <link rel ="stylesheet" href = "mediaqueries.css" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 
     </head>
     <body> 
@@ -64,16 +66,14 @@
                     Contact Info
                   </button>
                 </div>
-                    <a href="https://github.com/AustineBill" target="_blank" class="icon-icon" >
-                      <i class="fab fa-github fa-4x" style="color: #000000;"></i>
-                    </a>
-                     <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="icon-icon" >
-                      <i class="fab fa-linkedin fa-4x" style="color: #000000;"></i>
-                    </a>
-                    <img src="./assets/indeed.png" alt="My Indeed" class="icon-icon" 
-                        onclick="location.href='https://profile.indeed.com/'"/>
-                    <img src="./assets/upwork.png" alt="My Upwork" class="icon-icon" 
-                        onclick="location.href='https://www.upwork.com/freelancers/~010bfb1aeee8277e2e'"/>                        
+                
+                 <div class="icon-column">
+                    <i class="fab fa-github fa-4x" style="color: #000000;" onclick="window.open('https://github.com/AustineBill', '_blank')"></i>
+                    <i class="fab fa-linkedin fa-4x" style="color: #000000;" onclick="window.open('https://www.linkedin.com/in/yourusername', '_blank')"></i>
+                  <iconify-icon icon="simple-icons:upwork" width="40"  onclick="location.href='https://www.upwork.com/freelancers/~010bfb1aeee8277e2e'"></iconify-icon>
+                  <iconify-icon icon="simple-icons:indeed" width="40" onclick="location.href='https://profile.indeed.com/'"></iconify-icon>
+                </div>
+                      
               </div>
         </section>
 
@@ -95,12 +95,12 @@
           </div>
           </section>
 
-        <section id="about">
+        <section id="about ">
           <div class="section__text ">
             <div class="about-containers">
               <div class="container">
-                  <i class="fa-solid fa-briefcase fa-3x" style="color: #000000;" ></i>
-                     <h3>School Experience</h3><br>
+                  
+                     <h1> <i class="fa-solid fa-briefcase fa-2x" style="color: #000000;" ></i> School Experience</h1><br>
                         <p>4 Years - Frontend Developer</p><br>
                         <p>3 Years - Backend Developer</p><br>
                         <p>7 Years - Programmer</p><br>
@@ -111,8 +111,8 @@
               </div>
 
               <div class="container">
-                <i class="fa-solid fa-graduation-cap fa-3x" style="color: #000000;"></i>
-                  <h3>Education</h3><br>
+                
+                  <h1> <i class="fa-solid fa-graduation-cap fa-2x" style="color: #000000;"></i> Education</h1><br>
                     <p> 4th Year B.S. in Information <br /> Systems</p><br><br>
                     <p> Graduate with Honors<br/>In the Computer Programming Track</p><br><br>
                     <p> Coursera Certificate in Website in WordPress<br /></p><br>
@@ -212,7 +212,7 @@
         </section>
 
            
-          <div class="see-through-container">
+         
             <div class="about-containers">
               <div class="small-container">
                     <div class="column-container">
@@ -271,20 +271,35 @@
                   <h2 class="experience-sub-title project-title">ISKED</h2>
                 <div class="btn-container">
                   <button class="btn btn-color-2" onclick="location.href='https://github.com/AustineBill/SK-YouthPortal'"> Github</button>
-                  <button class="btn btn-color-2" onclick="location.href='https://www.figma.com/design/11ci8UlBpH0wRL7OdYyMn4/Client-Wireframe?node-id=0-1t=3rCSuDgHQg8QxlSb-1'"> Figma</button>
+                   <button class="btn btn-color-2" onclick="location.href='https://www.figma.com/design/11ci8UlBpH0wRL7OdYyMn4/Client-Wireframe?node-id=0-1t=3rCSuDgHQg8QxlSb-1'"> Figma</button>
+                  <button class="btn btn-color-2" onclick="location.href='https://sk-youth-portal.vercel.app/'"> Website </button>
+                </div>
+              </div>
+              <div class="small-container">
+                <div class="column-container">
+                  <img src="./assets/Qubel.png" alt="Project 7" class="project-img"/>
+                </div>
+                  <h2 class="experience-sub-title project-title">Qubel</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2" onclick="location.href='https://github.com/AustineBill/SK-YouthPortal'" disabled> Private Github</button>
+                  <button class="btn btn-color-2" onclick="location.href='https://main.d3i1nz07fr633i.amplifyapp.com/'"> Website </button>
                 </div>
               </div>
             </div>
-          </div>
+     
          
 
-            <section id="contact">
-              <div class="section__text">
+            <section>
+              <div class="container__text">
                 <p class="section__text__p1">Get in touch</p>
                 <h1 class="title">Contact Me</h1> 
-
+              </div>
+            </section>
+            
+            <section>
               <div class="contact-info-upper-container">
                 <div class="contact-info-container">
+                 
                   <img
                     src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
                   <p><a href="https://mail.google.com/">auztine.malic@gmail.com</a></p>
@@ -317,10 +332,12 @@
                   </ul>
                 </div>
               </nav>
-              <p>Copyright &#169; 2025 Malic. All Rights Reserved.</p>
+               <p>&copy; <span id="year"></span> Malic. All Rights Reserved.</p>
             </footer>
             
-        <script src ="script.js"></script>
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
 

@@ -37,49 +37,64 @@ const experienceData = [
   {
     title: "Frontend Development",
     items: [
-      { name: "ReactJS", level: "Intermediate" },
-      { name: "HTML", level: "Intermediate" },
-      { name: "CSS", level: "Intermediate" },
-      { name: "Bootstrap", level: "Intermediate" },
+      { name: "ReactJS", icon: "fab fa-react" },
+      { name: "HTML", icon: "fab fa-html5" },
+      { name: "CSS", icon: "fab fa-css3-alt" },
+      { name: "Tailwind CSS", icon: "fas fa-wind" },
+      { name: "Bootstrap", icon: "fab fa-bootstrap" },
     ],
   },
   {
     title: "Backend Development",
-    items: [{ name: "Nodejs" }, { name: "ExpressJs" }, { name: "RestAPI" }],
+    items: [
+      { name: "Nodejs", icon: "fab fa-node-js" },
+      { name: "ExpressJs", icon: "fas fa-server" },
+      { name: "RestAPI", icon: "fas fa-cogs" },
+    ],
   },
   {
     title: "Deployment",
     items: [
-      { name: "Netlify" },
-      { name: "Vercel" },
-      { name: "Render" },
-      { name: "Heroku" },
+      { name: "Netlify", icon: "fas fa-rocket" },
+      { name: "Vercel", icon: "fas fa-code-branch" },
+      { name: "Render", icon: "fas fa-globe" },
+      { name: "Heroku", icon: "fab fa-heroku" },
     ],
   },
   {
     title: "Database Management",
     items: [
-      { name: "MySQL", level: "Intermediate" },
-      { name: "PostgreSQL", level: "Intermediate" },
+      { name: "MySQL", icon: "fas fa-database" },
+      { name: "PostgreSQL", icon: "fas fa-database" },
     ],
   },
   {
     title: "Tools and Technologies",
     items: [
-      { name: "Figma" },
-      { name: "VSCode" },
-      { name: "Github/Github Desktop" },
-      { name: "pgAdmin" },
-      { name: "DBeaver" },
+      { name: "Figma", icon: "fab fa-figma" },
+      { name: "VSCode", icon: "fas fa-code" },
+      { name: "Github/Github Desktop", icon: "fab fa-github" },
+      { name: "pgAdmin", icon: "fas fa-tools" },
+      { name: "DBeaver", icon: "fas fa-database" },
     ],
   },
   {
     title: "Programming Language",
     items: [
-      { name: "C Language", level: "Basic" },
-      { name: "C++ Language", level: "Intermediate" },
-      { name: "Python Language", level: "Basic" },
-      { name: "Javascript Language", level: "Intermediate" },
+      { name: "C Language", icon: "fas fa-code" },
+      { name: "C++ Language", icon: "fas fa-code" },
+      { name: "Python Language", icon: "fab fa-python" },
+      { name: "Javascript Language", icon: "fab fa-js" },
+    ],
+  },
+  {
+    title: "AWS Cloud Services",
+    items: [
+      { name: "AWS Amplify", icon: "fab fa-aws" },
+      { name: "AWS RDS", icon: "fas fa-database" },
+      { name: "AWS S3 Bucket", icon: "fas fa-cloud-upload-alt" },
+      { name: "AWS Lambda", icon: "fas fa-code" },
+      { name: "AWS API Gateway", icon: "fas fa-network-wired" },
     ],
   },
 ];
@@ -91,22 +106,23 @@ experienceData.forEach((group) => {
   section.className = "details-container";
 
   section.innerHTML = `
-    <h2 class="experience-sub-title">${group.title}</h2>
-    <div class="article-container">
-      ${group.items
-        .map(
-          (item) => `
-        <article>
-          <i class="fas fa-check"></i>
-          <div>
-            <h3>${item.name}</h3>
-            ${item.level ? `<p>${item.level}</p>` : ""}
-          </div>
-        </article>
-      `
-        )
-        .join("")}
-    </div>
-  `;
+  <h2 class="experience-sub-title">${group.title}</h2>
+  <div class="article-container">
+    ${group.items
+      .map(
+        (item) => `
+      <article>
+        <i class="${item.icon || "fas fa-check"}"></i>
+        
+          <h3>${item.name}</h3>
+          ${item.level ? `<p>${item.level}</p>` : ""}
+      
+      </article>
+    `
+      )
+      .join("")}
+  </div>
+`;
+
   container.appendChild(section);
 });

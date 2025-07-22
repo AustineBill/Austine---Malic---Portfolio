@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+/*@media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -22,17 +22,11 @@
     margin-top: 2rem;
   }
 
-  #profile,
-  .section-container {
-    display: block;
-  }
-
   #about,
   .section__text__p1 {
     display: block;
     padding-top: 10%;
   }
-   
 
   section,
   .section-container {
@@ -42,7 +36,7 @@
   section {
     margin: 0 6%;
   }
-  
+
   .section__pic-container {
     width: 275px;
     height: 275px;
@@ -53,58 +47,121 @@
     margin-top: 0%;
   }
 
-  .Myskills{
+  .Myskills {
     width: 275px;
     height: 400px;
   }
-}
+}*/
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  * {
+    margin: 0%;
+  }
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
   }
 
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 2rem;
     text-align: center;
   }
 
- .pro-pic{
+  .icon-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: auto;
+    margin: 0%;
+  }
+
+  .pro-pic {
     border-radius: 50%;
-    height: 350px;
-    width: 350px;
-    justify-content: center; 
-    text-align: center;
+    height: 250px;
+    width: 250px;
   }
 
-  article {
+  .section__text {
+    padding: 2rem 0;
     font-size: 1rem;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .animate-text span {
+    font-size: 20px;
+  }
+
+  .text-container .container .about-containers {
+    text-align: justify;
+  }
+
+  .Myskills {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .skill-name {
+    font-size: 10px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+  }
+
+  .experience-sub-title {
+    font-size: 1rem;
+  }
+
+  .article-container article {
+    font-size: 10px; /* Adjust icon size */
   }
 
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
-  }
-
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
   }
 
   .contact-info-container {
     margin: 0;
   }
 
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
+  .about-containers,
+  .btn-container {
+    flex-wrap: wrap;
   }
 
-  .experience-sub-title {
-    font-size: 1.25rem;
+  .contact-info-upper-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 0.5rem;
+  }
+  .contact-info-container img {
+    height: 1rem;
+  }
+
+  .nav-links {
+    display: inline;
   }
 
   .logo {
@@ -117,27 +174,7 @@
     text-align: center;
   }
 
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text {
-    padding-top: 15%;
-    
-  }
-  .section__text__p2 {
-    font-size: 1.25rem; 
-  }
-
   .title {
     font-size: 2rem;
   }
-
-  .text-container {
-    text-align: justify;
-  }
 }
-  .icon-icon{
-    cursor: default;
-  }
